@@ -1,0 +1,13 @@
+// Определение используемых цветов
+@text-color: #333;
+@border-color: darkblue;
+@card-color: #e0f0ff;
+@thumbnail-color: #aaa;
+
+// Увеличить при наведении
+.zoom-on-hover(@factor: 1.2) {
+  transition: transform 0.1s;
+  &:hover {
+    transform: scale(@factor);
+  }
+}

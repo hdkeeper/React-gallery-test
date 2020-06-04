@@ -1,0 +1,91 @@
+@import '../../styles/defs.less';
+
+.PhotoList {
+  h2 {
+    margin: 0 0 15px 0;
+  }
+
+  .backward {
+    font-size: 30px;
+    margin-right: 10px;
+    display: inline-block;
+    .zoom-on-hover();
+  }
+
+  .thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 160px);
+    grid-gap: 8px;
+  }
+
+  .error {
+    font-size: 24px;
+    color: red;
+  }
+
+  .backward-error {
+    font-size: 24px;
+    display: inline-block;
+    .zoom-on-hover();
+  }
+}
+
+.ThumbnailCard {
+  background-color: @card-color;
+  border-radius: 4px;
+  border: 1px solid @border-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+
+  .thumbnail {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: @thumbnail-color;
+    cursor: pointer;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+.DetailsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .close-icon {
+    cursor: pointer;
+    user-select: none;
+    font-size: 36px;
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    .zoom-on-hover();
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+
+    .arrow {
+      font-size: 80px;
+      cursor: pointer;
+      user-select: none;
+      .zoom-on-hover();
+    }
+  }
+
+  img {
+    display: block;
+    width: 600px;
+    height: 600px;
+    background-color: @thumbnail-color;
+    margin: 0 20px;
+  }
+}
