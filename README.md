@@ -30,6 +30,7 @@ npm start
 При запущенном сервере, запускаем клиент:
 ```
 cd React-gallery-test
+npm install yarn --global
 yarn
 yarn start
 ```
